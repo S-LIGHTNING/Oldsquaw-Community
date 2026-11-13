@@ -3,6 +3,7 @@
     "lib": ["DOM", "ES2020"],
     "jsx": "preserve",
     "target": "ES2020",
+    "outDir": "dist",
     "skipLibCheck": true,
     "types": ["@rsbuild/core/types", "node"],
     "jsxImportSource": "vue",
