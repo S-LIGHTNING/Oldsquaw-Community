@@ -5,11 +5,12 @@
         "noEmit": true,
         "checkJs": true,
         "lib": ["ES2020", "DOM"],
-        "moduleDetection": "force"
+        "moduleDetection": "force",
+        "allowImportingTsExtensions": true
     },
     "references": [
         { "path": "./tsconfig.node.json" },
         { "path": "./tsconfig.cloud.json" }
     ],
-    "include": ["rspack.config.js", "src/**/*", "public/edge-functions/**/*"]
+    "include": ["src/**/*"]
 }
