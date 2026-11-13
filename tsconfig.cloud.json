@@ -5,5 +5,5 @@
         "checkJs": true,
         "types": ["@cloudflare/workers-types"]
     },
-    "include": ["public/edge-functions/**/*"]
+    "include": ["edge-functions/**/*"]
 }
