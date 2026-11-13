@@ -1,0 +1,44 @@
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "id": 1,
+        "name": "Oldsquaw 社区",
+        "type": "测试",
+        "link": "http://oldsquaw-community.localhost:3000/",
+        "cover_url": "https:\/\/cdn-community.codemao.cn\/47\/community\/d2ViXzEwMDFfNjUxOTcxM182NTE5NzEzXzE3MTMwMTg3NjE4MzdfNjI4OTM1Yzk.png",
+        "description": "测试 Oldsquaw 社区",
+        "user_id": 0,
+        "views": 121,
+        "is_featured": 0,
+        "status": "published",
+        "created_at": "2026-08-20 14:21:17",
+        "nickname": "SLIGHTNING",
+        "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTA2MTAwNjBfMTA2MTAwNjBfMTc1MjYzMDkyMzM0Ml81NGFiNjM1Nw.png",
+        "user_group": "admin",
+        "user_bio": "用于学习与交流。",
+        "points": 114515,
+        "workshop": {
+            "id": 0,
+            "name": "CoCoNext",
+            "logo_url": "https:\/\/ah.download.ahedu.cn\/rrt\/sns_album\/2026\/08\/20\/1787214333305_6a86b9fd283a7.png"
+        },
+        "user": {
+            "id": 0,
+            "nickname": "云碧学者",
+            "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTA2MTAwNjBfMTA2MTAwNjBfMTc1MjYzMDkyMzM0Ml81NGFiNjM1Nw.png",
+            "bio": "用于学习与交流。",
+            "points": 114515,
+            "user_group": "admin",
+            "codemao_id": 0,
+            "created_at": "",
+            "workshop": {
+                "id": 0,
+                "name": "CoCoNext",
+                "logo_url": "https:\/\/ah.download.ahedu.cn\/rrt\/sns_album\/2026\/08\/20\/1787214333305_6a86b9fd283a7.png",
+                "role": "owner"
+            },
+            "has_pending_workshop_application": false
+        }
+    }
+}

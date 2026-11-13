@@ -1,0 +1,45 @@
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "id": 0,
+        "custom_id": "@oldsquaw-coco-next\/cocokit-loader",
+        "version": "",
+        "name": "CoCoKit 控件加载器",
+        "description": "在 CoCo Next 中加载 CoCoKit 控件",
+        "type": "coco-next-plugin",
+        "link": "https:\/\/static.e9p.top\/free\/49bb76ed8dd9c36a.json",
+        "icon_url": "",
+        "user_id": 0,
+        "views": 36,
+        "status": "published",
+        "created_at": "2026-08-26 11:19:32",
+        "nickname": "SLIGHTNING",
+        "avatar_url": "https:\/\/cdn-community.codemao.cn\/47\/community\/d2ViXzEwMDFfNjUxOTcxM182NTE5NzEzXzE3MTMwMTg3NjE4MzdfNjI4OTM1Yzk.png",
+        "user_group": "admin",
+        "user_bio": "https:\/\/s-lightning.github.io\/，每周都被盗号，真是服了",
+        "points": 15,
+        "workshop": {
+            "id": 0,
+            "name": "CoCoNext",
+            "logo_url": "https:\/\/ah.download.ahedu.cn\/rrt\/sns_album\/2026\/08\/20\/1787214333305_6a86b9fd283a7.png"
+        },
+        "user": {
+            "id": 0,
+            "nickname": "SLIGHTNING",
+            "avatar_url": "https:\/\/cdn-community.codemao.cn\/47\/community\/d2ViXzEwMDFfNjUxOTcxM182NTE5NzEzXzE3MTMwMTg3NjE4MzdfNjI4OTM1Yzk.png",
+            "bio": "https:\/\/s-lightning.github.io\/，每周都被盗号，真是服了",
+            "points": 15,
+            "user_group": "admin",
+            "codemao_id": 0,
+            "created_at": "",
+            "workshop": {
+                "id": 0,
+                "name": "CoCoNext",
+                "logo_url": "https:\/\/ah.download.ahedu.cn\/rrt\/sns_album\/2026\/08\/20\/1787214333305_6a86b9fd283a7.png",
+                "role": "member"
+            },
+            "has_pending_workshop_application": false
+        }
+    }
+}

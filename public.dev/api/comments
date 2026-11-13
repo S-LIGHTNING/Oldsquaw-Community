@@ -1,0 +1,73 @@
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "list": [
+            {
+                "id": 0,
+                "content": "我最骄傲的oldsquaw，回来吧！😭",
+                "user_id": 0,
+                "target_type": "post",
+                "target_id": 0,
+                "status": "visible",
+                "created_at": "2026-10-27 00:27:33",
+                "nickname": "云碧学者",
+                "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTA2MTAwNjBfMTA2MTAwNjBfMTc1MjYzMDkyMzM0Ml81NGFiNjM1Nw.png",
+                "user_group": "admin",
+                "workshop": {
+                    "id": 0,
+                    "name": "CoCoNext"
+                }
+            },
+            {
+                "id": 0,
+                "content": "今夕是何年",
+                "user_id": 0,
+                "target_type": "post",
+                "target_id": 0,
+                "status": "visible",
+                "created_at": "2026-10-26 14:12:09",
+                "nickname": "有命取姓",
+                "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTMzOTk5MzIzNl8xMzM5OTkzMjM2XzE3ODczODQ3NjMxODRfZGZiMzMzODg.jpeg",
+                "user_group": "normal",
+                "workshop": null
+            },
+            {
+                "id": 0,
+                "content": "其实主要问题出在没找公关（）\n要是有公关估计也不会出这情况",
+                "user_id": 0,
+                "target_type": "post",
+                "target_id": 0,
+                "status": "visible",
+                "created_at": "2026-08-24 12:55:21",
+                "nickname": "寒拂晴ColdBreeze",
+                "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTM0NTQ0MTQxNl8xMzQ1NDQxNDE2XzE3ODc1NDcxNzgzNDJfNjA4ODVlNjQ.jpeg",
+                "user_group": "normal",
+                "workshop": {
+                    "id": 0,
+                    "name": "CoCoNext"
+                }
+            },
+            {
+                "id": 0,
+                "content": "文章修订记录：\n2026\/8\/24 第一次修改：“8月26日 林中团队（以下简称林中）发布了一张用户数据后台截图（因图片中包含未脱敏或脱敏后仍有辨识度的敏感内容，故此处不展示”修改为“8月23日 林中团队（以下简称林中）发布了一张用户数据后台截图（因图片中包含未脱敏或脱敏后仍有辨识度的敏感内容，故此处不展示”",
+                "user_id": 0,
+                "target_type": "post",
+                "target_id": 0,
+                "status": "visible",
+                "created_at": "2026-08-24 09:20:33",
+                "nickname": "Explore114",
+                "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfNjQ2OTkwMDE1XzY0Njk5MDAxNV8xNzg3MTU4NjM5MzE0XzMwNjBlY2Zl.jpeg",
+                "user_group": "admin",
+                "workshop": {
+                    "id": 0,
+                    "name": "CoCoNext"
+                }
+            }
+        ],
+        "total": 10,
+        "page": 1,
+        "page_size": 20,
+        "total_pages": 2
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "user": {
+            "id": 0,
+            "nickname": "SLIGHTNING",
+            "avatar_url": "https:\/\/cdn-community.codemao.cn\/47\/community\/d2ViXzEwMDFfNjUxOTcxM182NTE5NzEzXzE3MTMwMTg3NjE4MzdfNjI4OTM1Yzk.png",
+            "bio": "https:\/\/s-lightning.github.io\/，每周都被盗号，真是服了",
+            "points": 15,
+            "user_group": "admin",
+            "codemao_id": 0,
+            "created_at": "2026-08-20 14:26:20",
+            "workshop": {
+                "id": 0,
+                "name": "CoCoNext",
+                "logo_url": "https:\/\/ah.download.ahedu.cn\/rrt\/sns_album\/2026\/08\/20\/1787214333305_6a86b9fd283a7.png",
+                "role": "member"
+            },
+            "has_pending_workshop_application": false
+        },
+        "works": [
+            {
+                "id": 1,
+                "name": "Oldsquaw 社区",
+                "type": "测试",
+                "link": "https:\/\/cue-p.pages.dev\/kn\/?type=2&workId=325843436",
+                "cover_url": "",
+                "description": "",
+                "user_id": 0,
+                "views": 70,
+                "is_featured": 0,
+                "status": "published",
+                "created_at": "2026-08-22 10:52:11"
+            },
+            {
+                "id": 0,
+                "name": "测试测试测试",
+                "type": "测试",
+                "link": "https:\/\/coco.codemao.cn",
+                "cover_url": "https:\/\/static.e9p.top\/free\/b699875ee623a378.jpg",
+                "description": "测试喵",
+                "user_id": 0,
+                "views": 113,
+                "is_featured": 0,
+                "status": "published",
+                "created_at": "2026-08-20 14:21:17"
+            }
+        ],
+        "posts": [
+            {
+                "id": 0,
+                "title": "（已失效）发现哔哩哔哩一个神秘东西",
+                "content": "<h1>发现哔哩哔哩一个神秘东西</h1><p>本方法<span style=\"color: rgb(255, 0, 0)\">已失效</span>，不用看了</p><p>原内容：</p><p><span style=\"color: rgb(192, 192, 192)\">大家好，我是manyJ，最近发现了一个哔哩哔哩内打开外链的方法</span></p><p><span style=\"color: rgb(192, 192, 192)\">可以用于推广什么的，具体用法我不多说</span></p><p><span style=\"color: rgb(192, 192, 192)\">这里要感谢片姐在评论区发的神秘广告，我复制并理解了原理，然后总结出这个方法</span></p><pre class=\"ql-syntax\">https://d.bilibili.com/download_app.html?from_spmid=tm.recommend.0.0&amp;plat_id=124&amp;preUrl=bilibili://mall/web?url=http://bili.bilibili.com@&lt;Your Domain name&gt;?sdgdfh&amp;schema=bilibili://mall/web?url=http://bili.bilibili.com@&lt;Your Domain name&gt;?sdgdfh&amp;share_from=h5\n</pre><p><span style=\"color: rgb(192, 192, 192)\">将其中的替换为想跳转的地址即可，其他什么都不要改</span></p><p>例如：</p><pre class=\"ql-syntax\">https://d.bilibili.com/download_app.html?from_spmid=tm.recommend.0.0&amp;plat_id=124&amp;preUrl=bilibili://mall/web?url=http://bili.bilibili.com@blog.jsoftstudio.top/?sdgdfh&amp;schema=bilibili://mall/web?url=http://bili.bilibili.com@blog.jsoftstudio.top/?sdgdfh&amp;share_from=h5\n</pre><p><span style=\"color: rgb(192, 192, 192)\">具体就不多说了，本期分享就到这里</span></p><p><span style=\"color: rgb(192, 192, 192)\">我们下期再见</span></p><p>manyJ</p><p>2026.4.13</p><p><br></p><h1>B站小号被封一年</h1><p>何意味</p><p>因为我昨天用小号试了一下那个神秘链接（具体见《发现哔哩哔哩一个神秘东西》）</p><p>也是喜提一年封号</p><p>😭😭😭</p><p>还好用的是小号</p><p><br></p><h1>好消息，我的B站小号解封了</h1><p>嗯对大概就是通过申诉的方法解封了</p><p>😭😭😭还好我只是在自己视频下面测试</p><p>太好了😋😋😋😋</p><p><img src=\"https://blog.jsoftstudio.top/res/Screenshot_2026-04-15-22-12-11-98_149003a2d400f6adb210d7e357a3a646.jpg\" alt=\"B站解封\" height=\"94.75\" width=\"270\"></p>",
+                "content_type": "html",
+                "user_id": 0,
+                "board_id": 0,
+                "views": 10,
+                "is_featured": 0,
+                "is_top": 0,
+                "is_global_top": 0,
+                "status": "published",
+                "created_at": "2026-08-24 16:04:27",
+                "updated_at": "2026-10-31 18:16:01",
+                "board_name": "教程分享"
+            },
+            {
+                "id": 0,
+                "title": "使用Jsoft文件快递柜快速搭建文件分享站点",
+                "content": "<p>大家好，我是manyJ，这篇文章教大家如何部署我们的文件快递柜</p><h2>下载文件快递柜代码</h2><p>首先我们需要前往GitHub<span style=\"color: rgb(255, 0, 0)\">（需魔法上网）</span>，下载文件快递柜的release</p><p>点击前往：<a href=\"https://github.com/kamcdev/Jsoft_express_cabinet\" rel=\"noopener noreferrer\" target=\"_blank\">Jsoft_express_cabinet</a></p><p><img src=\"https://blog.jsoftstudio.top/res/dl_jec_releases.png\" alt=\"下载release\" height=\"388\" width=\"716\"></p><p>点击<span style=\"color: rgb(0, 255, 0)\">release</span>，选择最新版本即可，点击下载zip文件</p><p><img src=\"https://blog.jsoftstudio.top/res/dl_jec_zip.png\" alt=\"下载release\" height=\"388\" width=\"716\"></p><p>若<span style=\"color: rgb(255, 0, 0)\">没有魔法上网环境</span>，也可以直接下载下面的<span style=\"color: rgb(255, 0, 0)\">附件</span></p><p>Jsoftec-1.0.9-Release.zip</p><p>下载</p><p>下载完成后，解压到一个<span style=\"color: rgb(255, 0, 0)\">英文目录（不要带中文或符号）</span></p><p><img src=\"https://blog.jsoftstudio.top/res/jec_filelist.png\" alt=\"解压后的文件列表\" height=\"300\" width=\"716\"></p><h2>部署项目</h2><p>在上方地址栏输入</p><pre class=\"ql-syntax\">cmd\n</pre><p><img src=\"https://blog.jsoftstudio.top/res/input_cmd.png\" alt=\"输入cmd\" height=\"200\" width=\"500\"></p><p>进入命令提示符</p><p>随后在命令提示符中输入</p><pre class=\"ql-syntax\">pip install -r requirements.txt\n</pre><p>安装依赖</p><p>此处如果没有安装python和pip，请先前往<a href=\"https://www.python.org/downloads/\" rel=\"noopener noreferrer\" target=\"_blank\">python官网</a>下载并安装</p><p>安装成功后，继续输入命令</p><pre class=\"ql-syntax\">python app.py\n</pre><p>启动项目</p><p>默认端口为<span style=\"color: rgb(255, 0, 0)\">23478</span>，可以在<span style=\"color: rgb(255, 0, 0)\">app.py</span>中修改</p><p>打开浏览器并进入快递柜页面</p><p>在地址栏输入</p><pre class=\"ql-syntax\">http://127.0.0.1:23478\n</pre><p>首次进入会要求设置管理员密码</p><p><img src=\"https://blog.jsoftstudio.top/res/jec_setpwd.png\" alt=\"设置管理员密码\" height=\"388\" width=\"716\"></p><p>随后点击<span style=\"color: rgb(0, 255, 0)\">确认</span>，即可初始化项目并进入主页</p><h2>配置和测试项目</h2><p>接下来我们进入路径<span style=\"color: rgb(255, 0, 0)\">/admin/login</span></p><p>并输入管理员密码，进入后台</p><p>点击<span style=\"color: rgb(33, 150, 243)\">界面设置</span>，并设置背景图和图标</p><p><img src=\"https://blog.jsoftstudio.top/res/jec_setbg.png\" alt=\"设置背景图和图标\" height=\"388\" width=\"716\"></p><p>选择背景和图标文件后，按钮旁会出现选择的文件名</p><p>滑动到页面底部，点击<span style=\"color: rgb(33, 150, 243)\">更新设置</span>按钮</p><p>图片上传完成后会自动刷新页面，设置生效</p><p><img src=\"https://blog.jsoftstudio.top/res/jec_newbg.png\" alt=\"设置背景图和图标\" height=\"388\" width=\"716\"></p><p>接下来前往其他标签页，根据需要进行设置</p><p>完成所有设置后点击右上角<span style=\"color: rgb(255, 0, 0)\">退出登录</span>回到主页</p><p>在主页点击右上角<span style=\"color: rgb(33, 150, 243)\">存放文件</span>按钮，并<span style=\"color: rgb(0, 255, 0)\">上传</span>一个文件进行测试</p><p><img src=\"https://blog.jsoftstudio.top/res/jec_upload.png\" alt=\"上传文件\" height=\"388\" width=\"716\"></p><p>上传好后会展示四位数取件码</p><p><img src=\"https://blog.jsoftstudio.top/res/jec_upload_ok.png\" alt=\"上传文件成功\" height=\"388\" width=\"716\"></p><p>在主页点击键盘输入取件码即可获取对应文件</p><p><img src=\"https://blog.jsoftstudio.top/res/jec_input_code.png\" alt=\"获取文件\" height=\"388\" width=\"716\"></p><p>配置并测试完成，即可开放给用户使用</p><p>别忘了点个<span style=\"color: rgb(238, 194, 17)\">star</span>支持一下我们的开发</p><p>以上就是安装文件快递柜的全部过程，我们下期再见</p><p>manyJ</p><p>2026.2.18</p>",
+                "content_type": "html",
+                "user_id": 0,
+                "board_id": 0,
+                "views": 16,
+                "is_featured": 1,
+                "is_top": 0,
+                "is_global_top": 0,
+                "status": "published",
+                "created_at": "2026-08-24 15:59:43",
+                "updated_at": "2026-10-26 00:04:42",
+                "board_name": "教程分享"
+            },
+            {
+                "id": 0,
+                "title": "禁止使用QQ/微信内置浏览器访问站点——qvban.js",
+                "content": "<p>还在因为神人用户总是使用<span style=\"color: rgb(255, 0, 0)\">QQ/微信自带浏览器</span>访问你的站点导致出现各种问题吗？</p><p>别着急！<span style=\"color: rgb(145, 229, 229)\">qvban</span>来了！</p><p>此js文件可以检查ua中是否包含<span style=\"color: rgb(255, 0, 0)\">QQ/微信自带浏览器</span>的特征，如果包含就会<span style=\"color: rgb(145, 229, 229)\">清空内容</span>并<span style=\"color: rgb(145, 229, 229)\">弹出友好提示</span>，引导使用<span style=\"color: rgb(238, 194, 17)\">外部浏览器</span>访问</p><p>使用手机QQ/微信访问样例：</p><p><img src=\"https://blog.jsoftstudio.top/res/qvban_qq.jpg\" alt=\"引擎窗口展示\" height=\"255\" width=\"116\"> <img src=\"https://blog.jsoftstudio.top/res/qvban_wx.jpg\" alt=\"引擎窗口展示\" height=\"255\" width=\"116\"></p><p>快为你的站点添加QQ/微信访问限制吧！</p><p>manyJ</p><p>2026.7.19</p>",
+                "content_type": "html",
+                "user_id": 0,
+                "board_id": 0,
+                "views": 8,
+                "is_featured": 0,
+                "is_top": 0,
+                "is_global_top": 0,
+                "status": "published",
+                "created_at": "2026-08-24 15:57:21",
+                "updated_at": "2026-10-26 21:38:27",
+                "board_name": "作品自荐"
+            }
+        ],
+        "plugins": [
+            {
+                "id": 0,
+                "custom_id": "@oldsquaw-coco-next\/cocokit-loader",
+                "name": "CoCoKit 控件加载器",
+                "description": "在 CoCo Next 中加载 CoCoKit 控件",
+                "type": "coco-next-plugin",
+                "link": "https:\/\/static.e9p.top\/free\/49bb76ed8dd9c36a.json",
+                "icon_url": "",
+                "user_id": 0,
+                "views": 18,
+                "status": "published",
+                "created_at": "2026-08-26 11:19:32"
+            },
+            {
+                "id": 0,
+                "custom_id": null,
+                "name": "Test",
+                "description": "",
+                "type": "",
+                "link": "https:\/\/coco.codemao.cn\/editor\/",
+                "icon_url": "",
+                "user_id": 0,
+                "views": 50,
+                "status": "published",
+                "created_at": "2026-08-22 19:47:33"
+            }
+        ]
+    }
+}

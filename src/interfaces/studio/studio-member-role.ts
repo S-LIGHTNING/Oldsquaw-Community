@@ -1,0 +1,1 @@
+export type StudioNumberRole = "owner" | "member"

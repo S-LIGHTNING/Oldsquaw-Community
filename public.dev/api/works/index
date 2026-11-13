@@ -1,0 +1,92 @@
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "list": [
+            {
+                "id": 0,
+                "name": "mjbcore—一款QQ机器人框架",
+                "type": "QQ机器人框架",
+                "link": "https:\/\/github.com\/kamcdev\/Jsoft_markbot_mjbcore",
+                "cover_url": "",
+                "description": "这是一款使用OneBot11客户端，基于Python开发的QQ机器人框架\n有问题可提交issue",
+                "user_id": 0,
+                "views": 25,
+                "is_featured": 0,
+                "status": "published",
+                "created_at": "2026-08-24 16:11:21",
+                "nickname": "manyJ",
+                "avatar_url": "https:\/\/static.codemao.cn\/nemo\/avatar\/avator_1.png",
+                "user_group": "moderator",
+                "workshop": {
+                    "id": 0,
+                    "name": "CoCoNext"
+                }
+            },
+            {
+                "id": 0,
+                "name": "MoreLine资源站",
+                "type": "站点",
+                "link": "https:\/\/more.jsoftstudio.top\/",
+                "cover_url": "",
+                "description": "公益资源站，可自由发布与查看资源",
+                "user_id": 0,
+                "views": 8,
+                "is_featured": 0,
+                "status": "published",
+                "created_at": "2026-08-24 16:09:51",
+                "nickname": "manyJ",
+                "avatar_url": "https:\/\/static.codemao.cn\/nemo\/avatar\/avator_1.png",
+                "user_group": "moderator",
+                "workshop": {
+                    "id": 0,
+                    "name": "CoCoNext"
+                }
+            },
+            {
+                "id": 0,
+                "name": "KN柠支付测试",
+                "type": "测试",
+                "link": "https:\/\/cue-p.pages.dev\/kn\/?type=2&workId=325843436",
+                "cover_url": "",
+                "description": "",
+                "user_id": 0,
+                "views": 70,
+                "is_featured": 0,
+                "status": "published",
+                "created_at": "2026-08-22 10:52:11",
+                "nickname": "柠檬酸鲨鱼",
+                "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTIwNjgxMzlfMTIwNjgxMzlfMTc4NzA1NjYwMTc0MF9iN2NmNTFkOQ.png",
+                "user_group": "moderator",
+                "workshop": {
+                    "id": 0,
+                    "name": "BetterNemo"
+                }
+            },
+            {
+                "id": 0,
+                "name": "测试测试测试",
+                "type": "测试",
+                "link": "https:\/\/coco.codemao.cn",
+                "cover_url": "https:\/\/static.e9p.top\/free\/b699875ee623a378.jpg",
+                "description": "测试喵",
+                "user_id": 0,
+                "views": 113,
+                "is_featured": 0,
+                "status": "published",
+                "created_at": "2026-08-20 14:21:17",
+                "nickname": "云碧学者",
+                "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTA2MTAwNjBfMTA2MTAwNjBfMTc1MjYzMDkyMzM0Ml81NGFiNjM1Nw.png",
+                "user_group": "admin",
+                "workshop": {
+                    "id": 0,
+                    "name": "CoCoNext"
+                }
+            }
+        ],
+        "total": 4,
+        "page": 1,
+        "page_size": 20,
+        "total_pages": 1
+    }
+}

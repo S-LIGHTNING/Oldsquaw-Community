@@ -1,0 +1,84 @@
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "groups": [
+            {
+                "level": {
+                    "id": 0,
+                    "name": "官方团队",
+                    "min_points": 5000,
+                    "sort_order": 1,
+                    "created_at": "2026-08-20 00:22:34"
+                },
+                "workshops": [
+                    {
+                        "id": 0,
+                        "name": "BetterNemo",
+                        "description": "BetterNemo及其相关项目开发团队",
+                        "logo_url": "https:\/\/static.e9p.top\/free\/f1ab1f8c951ff56c.png",
+                        "level_id": 0,
+                        "creator_id": 0,
+                        "created_at": "2026-08-24 17:37:44",
+                        "nickname": "柠檬酸鲨鱼",
+                        "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTIwNjgxMzlfMTIwNjgxMzlfMTc4NzA1NjYwMTc0MF9iN2NmNTFkOQ.png"
+                    },
+                    {
+                        "id": 0,
+                        "name": "CoCoNext",
+                        "description": "CoCoNext开发团队官方工作室",
+                        "logo_url": "https:\/\/ah.download.ahedu.cn\/rrt\/sns_album\/2026\/08\/20\/1787214333305_6a86b9fd283a7.png",
+                        "level_id": 0,
+                        "creator_id": 0,
+                        "created_at": "2026-08-20 01:00:11",
+                        "nickname": "云碧学者",
+                        "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTA2MTAwNjBfMTA2MTAwNjBfMTc1MjYzMDkyMzM0Ml81NGFiNjM1Nw.png"
+                    }
+                ]
+            },
+            {
+                "level": {
+                    "id": 0,
+                    "name": "精英工作室",
+                    "min_points": 500,
+                    "sort_order": 2,
+                    "created_at": "2026-08-19 22:58:01"
+                },
+                "workshops": [
+                    {
+                        "id": 0,
+                        "name": "KN Expanse",
+                        "description": "KE...",
+                        "logo_url": "https:\/\/static.e9p.top\/free\/da549001e966b26d.png",
+                        "level_id": 0,
+                        "creator_id": 0,
+                        "created_at": "2026-08-25 21:11:30",
+                        "nickname": "星落于轨",
+                        "avatar_url": "https:\/\/static.codemao.cn\/986\/nemo\/219f1848-43f6-4898-8403-ffaad3b500fd.jpeg"
+                    }
+                ]
+            },
+            {
+                "level": {
+                    "id": 0,
+                    "name": "进阶工作室",
+                    "min_points": 100,
+                    "sort_order": 3,
+                    "created_at": "2026-08-19 22:58:01"
+                },
+                "workshops": []
+            },
+            {
+                "level": {
+                    "id": 0,
+                    "name": "萌新工作室",
+                    "min_points": 0,
+                    "sort_order": 5,
+                    "created_at": "2026-08-19 22:58:01"
+                },
+                "workshops": []
+            }
+        ],
+        "ads": []
+    }
+}

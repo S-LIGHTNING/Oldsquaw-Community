@@ -1,0 +1,30 @@
+{
+  "name": "oldsquaw-community",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "SLIGHTNING",
+  "type": "module",
+  "scripts": {
+    "build": "vue-tsc && rsbuild build",
+    "dev": "rsbuild",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "axios": "^1.19.0",
+    "vue": "^3.5.41",
+    "vue-router": "^5.2.0",
+    "vuetify": "^4.1.10"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261113.1",
+    "@mdi/font": "^7.4.47",
+    "@rsbuild/core": "^2.2.10",
+    "@rsbuild/plugin-node-polyfill": "^1.4.6",
+    "@rsbuild/plugin-vue": "^2.0.1",
+    "@types/node": "^24.13.3",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.9",
+    "webpack-plugin-vuetify": "^3.1.3"
+  }
+}

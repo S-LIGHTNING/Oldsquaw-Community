@@ -1,0 +1,105 @@
+{
+    "code": 0,
+    "message": "ok",
+    "data": {
+        "id": 0,
+        "name": "CoCoNext",
+        "description": "CoCoNext开发团队官方工作室",
+        "logo_url": "https:\/\/ah.download.ahedu.cn\/rrt\/sns_album\/2026\/08\/20\/1787214333305_6a86b9fd283a7.png",
+        "level_id": 0,
+        "creator_id": 0,
+        "created_at": "2026-08-20 01:00:11",
+        "level_name": "官方团队",
+        "creator_name": "云碧学者",
+        "creator_avatar": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTA2MTAwNjBfMTA2MTAwNjBfMTc1MjYzMDkyMzM0Ml81NGFiNjM1Nw.png",
+        "members": [
+            {
+                "id": 0,
+                "workshop_id": 0,
+                "user_id": 0,
+                "role": "owner",
+                "created_at": "2026-08-20 01:00:11",
+                "nickname": "云碧学者",
+                "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTA2MTAwNjBfMTA2MTAwNjBfMTc1MjYzMDkyMzM0Ml81NGFiNjM1Nw.png",
+                "user_group": "admin"
+            },
+            {
+                "id": 0,
+                "workshop_id": 0,
+                "user_id": 0,
+                "role": "member",
+                "created_at": "2026-08-20 01:02:20",
+                "nickname": "Explore114",
+                "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfNjQ2OTkwMDE1XzY0Njk5MDAxNV8xNzg3MTU4NjM5MzE0XzMwNjBlY2Zl.jpeg",
+                "user_group": "admin"
+            },
+            {
+                "id": 0,
+                "workshop_id": 0,
+                "user_id": 0,
+                "role": "member",
+                "created_at": "2026-08-20 14:28:29",
+                "nickname": "SLIGHTNING",
+                "avatar_url": "https:\/\/cdn-community.codemao.cn\/47\/community\/d2ViXzEwMDFfNjUxOTcxM182NTE5NzEzXzE3MTMwMTg3NjE4MzdfNjI4OTM1Yzk.png",
+                "user_group": "admin"
+            },
+            {
+                "id": 0,
+                "workshop_id": 0,
+                "user_id": 0,
+                "role": "member",
+                "created_at": "2026-08-21 15:12:36",
+                "nickname": "酶游明",
+                "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfOTg4NTE3NV85ODg1MTc1XzE3Njg4MDk0NTMwOTBfODc5YTFlNTQ.png",
+                "user_group": "admin"
+            },
+            {
+                "id": 0,
+                "workshop_id": 0,
+                "user_id": 0,
+                "role": "member",
+                "created_at": "2026-08-24 15:35:18",
+                "nickname": "manyJ",
+                "avatar_url": "https:\/\/static.codemao.cn\/nemo\/avatar\/avator_1.png",
+                "user_group": "moderator"
+            },
+            {
+                "id": 0,
+                "workshop_id": 0,
+                "user_id": 0,
+                "role": "member",
+                "created_at": "2026-08-24 16:02:01",
+                "nickname": "Qeeo",
+                "avatar_url": "https:\/\/static.e9p.top\/free\/203906a9c56d39a6.jpg",
+                "user_group": "moderator"
+            },
+            {
+                "id": 0,
+                "workshop_id": 0,
+                "user_id": 0,
+                "role": "member",
+                "created_at": "2026-08-25 00:44:38",
+                "nickname": "寒拂晴ColdBreeze",
+                "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTM0NTQ0MTQxNl8xMzQ1NDQxNDE2XzE3ODc1NDcxNzgzNDJfNjA4ODVlNjQ.jpeg",
+                "user_group": "normal"
+            },
+            {
+                "id": 0,
+                "workshop_id": 0,
+                "user_id": 0,
+                "role": "member",
+                "created_at": "2026-08-25 00:44:46",
+                "nickname": "楓虛",
+                "avatar_url": "https:\/\/cdn-community.bcmcdn.com\/47\/community\/d2ViXzEwMDFfMTU5Nzc4NzlfMTU5Nzc4NzlfMTc4Mzg5Mzc5NTUzM19kNjI0YjRlZQ.png",
+                "user_group": "normal"
+            }
+        ],
+        "viewer": {
+            "is_member": true,
+            "role": "member",
+            "has_pending": false,
+            "is_owner": false,
+            "pending_elsewhere": false
+        }
+    }
+}
