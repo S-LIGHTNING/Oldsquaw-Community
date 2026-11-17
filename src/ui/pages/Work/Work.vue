@@ -13,9 +13,12 @@ import type { BasicWork } from "../../../interfaces/work/basic-work.ts"
 import WorkList from "../../components/Work/List/WorkList.vue"
 import { showError } from "../../../utils/show-error.ts"
 import type { User } from "../../../interfaces/user/user.ts"
+import { useInnerWidth } from "../../hooks/use-inner-width.ts"
 
 const route = useRoute()
 const originalTitle = document.title
+const innerWidth = useInnerWidth()
+const towColumns = computed(() => innerWidth.value >= 1024)
 
 const workID = computed(() => Number(route.params.id))
 const work = ref<WorkInDetail>()
@@ -152,52 +155,78 @@ onUnmounted(() => {
 
 <template>
     <div class="page-wrapper">
-        <div class="work-card">
-            <v-skeleton-loader v-if="!work" :types="{ actions: `avatar@4` }" type="heading, text, image@3, divider@16, actions" />
-            <v-card v-if="work" :class="fullWindow && `full-window`">
-                <v-card-title>{{ work.name }}</v-card-title>
-                <v-card-text v-if="!fullWindow">{{ work.description }}</v-card-text>
-                <v-divider />
-                <div ref="run-wrapper" class="run-wrapper">
-                    <div class="run start" v-if="!(state instanceof RunningInIframeState)">
-                        <v-img class="start-background" :src="work.cover_url" cover draggable="false" />
-                        <div class="start-cover v-overlay" />
-                        <v-btn
-                            v-if="state.start"
-                            class="start-button"
-                            icon="mdi-play-circle-outline"
-                            variant="text"
-                            size="128px"
-                            @click="state.start()"
-                        />
-                        <v-icon class="external-icon" v-if="(state instanceof RunningInExternalWindowState)" icon="mdi-open-in-new" />
-                        <p class="external-hint" v-if="(state instanceof RunningInExternalWindowState)">正在独立窗口中运行</p>
+        <div class="left">
+            <div class="work-card">
+                <v-skeleton-loader v-if="!work" :types="{ actions: `avatar@4` }" type="heading, image@3, divider@20, actions" />
+                <v-card v-if="work" :class="fullWindow && `full-window`">
+                    <v-card-title>{{ work.name }}</v-card-title>
+                    <v-divider />
+                    <div ref="run-wrapper" class="run-wrapper">
+                        <div class="run start" v-if="!(state instanceof RunningInIframeState)">
+                            <v-img class="start-background" :src="work.cover_url" cover draggable="false" />
+                            <div class="start-cover v-overlay" />
+                            <v-btn
+                                v-if="state.start"
+                                class="start-button"
+                                icon="mdi-play-circle-outline"
+                                variant="text"
+                                size="128px"
+                                @click="state.start()"
+                            />
+                            <v-icon class="external-icon" v-if="(state instanceof RunningInExternalWindowState)" icon="mdi-open-in-new" />
+                            <p class="external-hint" v-if="(state instanceof RunningInExternalWindowState)">正在独立窗口中运行</p>
+                        </div>
+                        <iframe ref="iframe" class="run" v-if="(state instanceof RunningInIframeState)" :src="work.link" />
                     </div>
-                    <iframe ref="iframe" class="run" v-if="(state instanceof RunningInIframeState)" :src="work.link" />
-                </div>
-                <v-divider />
-                <v-dialog :modelValue="fullWindow" />
-                <v-card-actions class="actions">
-                    <v-spacer />
-                    <v-btn v-if="state.start" icon="mdi-play-circle-outline" @click="state.start()" />
-                    <v-btn v-if="state.startInNewWindow" icon="mdi-open-in-new" @click="state.startInNewWindow()" />
-                    <v-btn v-if="state.stop" icon="mdi-stop-circle-outline" @click="state.stop()" />
-                    <v-btn v-if="state.reload" icon="mdi-reload" @click="state.reload()" />
-                    <v-btn :icon="fullWindow ? `mdi-fullscreen-exit` : `mdi-overscan`" @click="toggleFullWindow" />
-                    <v-btn icon="mdi-fullscreen" @click="state.fullscreen()" />
-                </v-card-actions>
+                    <v-divider />
+                    <v-dialog :modelValue="fullWindow" />
+                    <v-card-actions class="actions">
+                        <v-spacer />
+                        <v-btn v-if="state.start" icon="mdi-play-circle-outline" @click="state.start()" />
+                        <v-btn v-if="state.startInNewWindow" icon="mdi-open-in-new" @click="state.startInNewWindow()" />
+                        <v-btn v-if="state.stop" icon="mdi-stop-circle-outline" @click="state.stop()" />
+                        <v-btn v-if="state.reload" icon="mdi-reload" @click="state.reload()" />
+                        <v-btn :icon="fullWindow ? `mdi-fullscreen-exit` : `mdi-overscan`" @click="toggleFullWindow" />
+                        <v-btn icon="mdi-fullscreen" @click="state.fullscreen()" />
+                    </v-card-actions>
+                </v-card>
+            </div>
+            <div class="work-info" v-if="!towColumns">
+                <v-skeleton-loader v-if="!work" type="article" />
+                <v-card class="description" v-if="work" title="简介" :text="work.description" />
+            </div>
+            <v-skeleton-loader class="user-card" v-if="!towColumns && !user" type="list-item-avatar-two-line" />
+            <UserCard class="user-card" v-if="!towColumns && user" :user="user" />
+            <WorkList v-if="!towColumns" :works="userWorks" :loading="userWorks.length === 0" />
+            <Comment targetType="work" :targetID="workID" :author="work?.user_id" />
+        </div>
+        <div class="right" v-if="towColumns">
+            <v-skeleton-loader class="user-card" v-if="!user" type="list-item-avatar-two-line" />
+            <UserCard class="user-card" v-if="user" :user="user" />
+            <div class="work-info">
+                <v-skeleton-loader class="description" v-if="!work" type="article" />
+                <v-card class="description" v-if="work" title="简介" :text="work.description" />
+            </div>
+            <v-card>
+                <v-card-title>该作者的作品</v-card-title>
+                <WorkList :elevation="0" :works="userWorks" :loading="userWorks.length === 0" />
             </v-card>
         </div>
-        <v-skeleton-loader class="user-card" v-if="!user" type="list-item-avatar-two-line" />
-        <UserCard class="user-card" v-if="user" :user="user" />
-        <WorkList :works="userWorks" :loading="userWorks.length === 0" />
-        <Comment targetType="work" :targetID="workID" :author="work?.user_id" />
     </div>
 </template>
 
 <style scoped>
 .page-wrapper {
-    margin-block: 32px;
+    margin-top: calc(max(2vw, 16px));
+    display: flex;
+}
+.left {
+    flex-grow: 1;
+}
+.right {
+    flex-shrink: 0;
+    width: 288px;
+    margin-left: 16px;
 }
 .full-window {
     border-radius: 0;
@@ -239,6 +268,7 @@ onUnmounted(() => {
 .run-wrapper {
     width: 100%;
     height: 512px;
+    background: rgb(var(--v-theme-surface));
 }
 .run {
     border: none;
@@ -255,7 +285,11 @@ onUnmounted(() => {
 .actions {
     height: 32px;
 }
-.user-card {
+.work-info {
     margin-top: 16px;
+}
+.description {
+    min-height: 140px;
+    margin-bottom: 16px;
 }
 </style>

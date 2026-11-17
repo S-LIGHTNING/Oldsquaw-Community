@@ -31,8 +31,7 @@ watchEffect(() => {
     height: fit-content;
     color: rgb(var(--v-theme-on-primary));
     background-color: rgb(var(--v-theme-primary));
-    padding-inline: 4px;
-    padding-bottom: 3px;
+    padding: 1px 4px;
     border-radius: 4px;
     margin-right: 4px;
 }

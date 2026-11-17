@@ -10,6 +10,7 @@ import { READ_API_BASE } from "../../../env.ts"
 import { withShowError } from "../../../utils/with-show-error"
 import BoardLink from "../../components/Forum/Board/BoardLink.vue"
 import Statistics from "../../components/Statistics.vue"
+import DateTime from "../../components/DateTime.vue"
 
 const route = useRoute()
 
@@ -46,7 +47,7 @@ watchEffect(() => {
             <v-avatar :image="post.avatar_url" size="x-small" />
             <span>{{ post.nickname }}</span>
             <v-spacer />
-            <span>{{ post.updated_at }}</span>
+            <DateTime :datetime="post.updated_at" />
             <Statistics :views="post.views" :comments="commentsCount" />
         </div>
         <v-divider />

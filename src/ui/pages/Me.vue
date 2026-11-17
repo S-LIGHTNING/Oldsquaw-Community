@@ -5,7 +5,7 @@ import axios from "axios"
 
 import { user } from "../../store/user"
 import { getErrorMessage } from "../../utils/get-error-message"
-import { READ_API_BASE } from "../../env.ts"
+import { WRITE_API_BASE } from "../../env.ts"
 import { alert } from "../dialogs/Alert.vue"
 
 const nickname = ref<string>()
@@ -25,7 +25,7 @@ const showError = ref(false)
 async function save() {
     saving.value = true
     try {
-        const { data: { data } } = await axios.post(READ_API_BASE + "/users/me?_method=PUT", {
+        const { data: { data } } = await axios.post(WRITE_API_BASE + "/users/me?_method=PUT", {
             avatar_url: avatarURL.value,
             bio: description.value,
             nickname: nickname.value

@@ -45,14 +45,13 @@ onUnmounted(() => {
 <template>
     <section>
         <v-skeleton-loader
-            class="content"
             v-if="loading"
             type="list-item-avatar-three-line"
             color="transparent"
             :elevation="0"
             :max-width="512"
         />
-        <div class="content" v-if="user && !loading">
+        <div v-if="user && !loading">
             <v-list-item class="section info">
                 <template #prepend>
                     <v-avatar :image="user.avatar_url" size="x-large" />
@@ -65,23 +64,20 @@ onUnmounted(() => {
     </section>
     <section>
         <v-toolbar title="作品" />
-        <div class="content"><WorkList :works :user :loading /></div>
+        <WorkList :works :user :loading />
     </section>
     <section>
         <v-toolbar title="帖子" />
-        <div class="content"><ForumPostList :posts :loading /></div>
+        <ForumPostList :posts :loading />
     </section>
     <section>
         <v-toolbar title="插件" />
-        <div class="content"><PluginList :plugins :loading /></div>
+        <PluginList :plugins :loading />
     </section>
 </template>
 
 <style scoped>
 section {
     margin-block: 16px;
-}
-.content {
-    padding-inline: 16px;
 }
 </style>

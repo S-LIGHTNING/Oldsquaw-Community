@@ -9,6 +9,7 @@ import { withShowError } from "../../../utils/with-show-error"
 import { WRITE_API_BASE } from "../../../env.ts"
 import Tag from "../Tag.vue"
 import type { User } from "../../../interfaces/user/user.ts"
+import DateTime from "../DateTime.vue"
 
 const props = defineProps<{
     comment: CommentInList
@@ -45,7 +46,7 @@ const deleteComment = withShowError(async () => {
         <v-list-item-title class="info">
             <router-link class="nickname" :to="`/user/${comment.user_id}`">{{ comment.nickname }}</router-link>
             <Tag v-if="comment.user_id === author" color="success">作者</Tag>
-            <span>{{ comment.created_at }}</span>
+            <DateTime :datetime="comment.created_at" />
             <v-spacer />
             <v-btn
                 v-if="comment.user_id === user?.id || user?.id === author || user?.user_group === `admin` || user?.user_group === `moderator`"
@@ -80,6 +81,9 @@ const deleteComment = withShowError(async () => {
     margin-right: 8px;
     color: inherit;
     text-decoration: inherit;
+    word-break: break-all;
+    line-break: anywhere;
+    white-space: break-spaces;
 }
 .content {
     margin-top: 4px;

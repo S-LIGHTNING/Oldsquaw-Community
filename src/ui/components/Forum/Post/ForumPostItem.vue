@@ -10,6 +10,7 @@ import { READ_API_BASE } from "../../../../env.ts"
 import Tag from "../../Tag.vue"
 import type { BasicForumPost } from "../../../../interfaces/forum/post/basic-forum-post.ts"
 import BoardLink from "../Board/BoardLink.vue"
+import DateTime from "../../DateTime.vue"
 
 const props = defineProps<{
     post: BasicForumPost &  Partial<ForumPostInList>
@@ -52,12 +53,11 @@ const description = computed(() => {
         <div class="item-bottom">
             <router-link class="user-info" v-if="post.nickname" :to="`/user/${post.user_id}`">
                 <v-avatar class="user-avatar" v-if="post.avatar_url" :image="post.avatar_url" size="x-small" />
-                <v-list-item-title>{{ post.nickname }}</v-list-item-title>
+                <v-list-item-title class="user-nickname">{{ post.nickname }}</v-list-item-title>
             </router-link>
-            <v-spacer v-if="post.nickname" />
-            <span>{{ post.created_at }}</span>
+            <DateTime class="publish-datetime" :datetime="post.created_at" />
             <v-spacer v-if="!post.nickname" />
-            <Statistics :views="post.views" :comments />
+            <Statistics class="statistics" :views="post.views" :comments />
         </div>
     </v-list-item>
 </template>
@@ -68,6 +68,9 @@ const description = computed(() => {
     display: flex;
 }
 .user-info {
+    width: 0;
+    flex-grow: 1;
+    margin-right: 8px;
     display: flex;
     color: inherit;
     text-decoration: none;
@@ -75,12 +78,12 @@ const description = computed(() => {
 .user-avatar {
     margin-right: 8px;
 }
-.views {
-    margin-left: 8px;
-    display: flex;
-    align-items: center;
+.user-nickname {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.views>span{
-    margin-left: 8px;
+.publish-datetime, .statistics {
+    flex-shrink: 0;
 }
 </style>

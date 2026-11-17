@@ -16,7 +16,7 @@ import { navigationRoutes } from "../app/router"
     </div>
     <Teleport to="body">
         <v-bottom-navigation class="bottom">
-            <v-btn v-for="route in navigationRoutes" :to="route.path">
+            <v-btn class="bottom-item" v-for="route in navigationRoutes" :to="route.path">
                 <v-icon>{{ route.meta.icon }}</v-icon>
                 <span>{{ route.meta.title }}</span>
             </v-btn>
@@ -43,6 +43,12 @@ import { navigationRoutes } from "../app/router"
 .bottom {
     background-color: rgba(var(--v-theme-surface-light), var(--v-high-emphasis-opacity));
     backdrop-filter: blur(4px);
+    padding-inline: 16px;
+}
+.bottom-item {
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 80px;
 }
 @media screen and (min-width: 825px) {
     .top {

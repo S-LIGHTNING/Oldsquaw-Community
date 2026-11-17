@@ -1,6 +1,7 @@
 import { createApp } from "vue"
 
 import { vuetify } from "./ui/plugins/vuetify"
+import "./ui/plugins/day"
 import { router } from "./ui/app/router"
 
 import "./ui/app/style.css"

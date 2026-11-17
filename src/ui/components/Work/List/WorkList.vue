@@ -14,10 +14,10 @@ defineProps<{
 </script>
 
 <template>
-    <v-list v-if="loading" :elevation="1">
+    <v-list v-if="loading" :elevation="1" v-bind="$attrs">
         <WorkLoadingItem v-for="_ in Array(loadingCardNumber ?? 4)" />
     </v-list>
-    <v-list v-if="!loading" :elevation="1">
+    <v-list v-if="!loading" :elevation="1" v-bind="$attrs">
         <WorkItem v-for="work in works" :work />
     </v-list>
 </template>
