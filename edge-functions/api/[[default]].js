@@ -2,6 +2,7 @@ const ALLOWED_ORIGIN_DOMAINS = [
     "next.ccwidget.top",
     "coco.ccwidget.top",
     "coco-next.localhost",
+    "oc.slightning.site",
     "oldsquaw-community.localhost"
 ]
 
