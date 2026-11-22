@@ -1,3 +1,10 @@
+const ALLOWED_ORIGIN_DOMAINS = [
+    "next.ccwidget.top",
+    "coco.ccwidget.top",
+    "coco-next.localhost",
+    "oldsquaw-community.localhost"
+]
+
 /**
  *
  * @param {EventContext<unknown, string, Record<string, unknown>>} context
@@ -10,12 +17,18 @@ export async function onRequest(context) {
         const url = new URL(request.url)
         url.host = "ccn.hopex.top"
 
+        const origin = new URL(request.headers.get("Origin") ?? "", "https://next.ccwidget.top")
+        // 来源域名检查
+        if (!ALLOWED_ORIGIN_DOMAINS.includes(origin.hostname)) {
+            return new Response(`Origin ${origin.hostname} not allowed.\n\nAllowed Origin:\n${ALLOWED_ORIGIN_DOMAINS.join("\n")}\n`, { status: 403 })
+        }
+
         // 构建新请求
         const newHeaders = new Headers(request.headers)
         newHeaders.set("Origin", "https://ccn.hopex.top")
         newHeaders.set("Referer", "https://ccn.hopex.top/")
-        newHeaders.delete("host")
-        newHeaders.delete("accept-encoding")
+        newHeaders.delete("Host")
+        newHeaders.delete("Accept-Encoding")
 
         const response = await fetch(url, {
             method: request.method,
@@ -27,16 +40,19 @@ export async function onRequest(context) {
         const { headers: responseHeaders } = newResponse
 
         // 移除 Content-Encoding，因为原有响应编码已经不适用于新的响应
-        responseHeaders.delete("content-encoding")
+        responseHeaders.delete("Content-Encoding")
 
         // 修改 Cookie
         /** @type {string[]} */
         const setCookies = /** @type {any} */(responseHeaders).getSetCookie()
-        responseHeaders.delete("set-cookie")
+        responseHeaders.delete("Set-Cookie")
         for (const setCookie of setCookies) {
-            const modifiedCookie = setCookie.replace(/ccn\.hopex\.top/g, (request.headers.get("host") ?? ""))
-            responseHeaders.append("set-cookie", modifiedCookie)
+            const modifiedCookie = setCookie.replace(/ccn\.hopex\.top/g, (request.headers.get("Host") ?? ""))
+            responseHeaders.append("Set-Cookie", modifiedCookie)
         }
+
+        // 允许跨域请求
+        responseHeaders.set("Access-Control-Allow-Origin", origin.origin)
 
         return newResponse
     } catch (error) {
