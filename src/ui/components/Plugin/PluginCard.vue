@@ -10,8 +10,8 @@ const { plugin } = defineProps<{
 }>()
 
 const pluginLocation = JSON.stringify({
-    source: "oldsquaw-community",
-    id: plugin.custom_id
+    shop: "@oldsquaw-coco-next/plugin-shop-oldsquaw-community",
+    packageName: plugin.custom_id
 })
 
 const installURLRecord: Record<string, () => string> = Object.assign(Object.create(null), {

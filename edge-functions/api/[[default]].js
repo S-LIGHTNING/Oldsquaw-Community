@@ -18,14 +18,17 @@ export async function onRequest(context) {
         const url = new URL(request.url)
         url.host = "ccn.hopex.top"
 
-        const origin = new URL(request.headers.get("Origin") ?? "", "https://next.ccwidget.top")
+        const { headers: requestHeaders } = request
+
+        const origin = new URL(requestHeaders.get("Origin") ?? requestHeaders.get("Referer") ?? "", "https://next.ccwidget.top")
+
         // 来源域名检查
         if (!ALLOWED_ORIGIN_DOMAINS.includes(origin.hostname)) {
             return new Response(`Origin ${origin.hostname} not allowed.\n\nAllowed Origin:\n${ALLOWED_ORIGIN_DOMAINS.join("\n")}\n`, { status: 403 })
         }
 
         // 构建新请求
-        const newHeaders = new Headers(request.headers)
+        const newHeaders = new Headers(requestHeaders)
         newHeaders.set("Origin", "https://ccn.hopex.top")
         newHeaders.set("Referer", "https://ccn.hopex.top/")
         newHeaders.delete("Host")
